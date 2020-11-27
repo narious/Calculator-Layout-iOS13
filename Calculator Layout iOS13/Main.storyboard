@@ -191,7 +191,7 @@
                                         <rect key="frame" x="0.0" y="710" width="414" height="142"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-W1-Eu8">
-                                                <rect key="frame" x="0.0" y="0.0" width="206.5" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="206.5" height="108"/>
                                                 <color key="backgroundColor" red="0.1137254902" green="0.60784313729999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="0">
@@ -199,10 +199,10 @@
                                                 </state>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="iNf-gy-AzK">
-                                                <rect key="frame" x="207.5" y="0.0" width="206.5" height="48"/>
+                                                <rect key="frame" x="207.5" y="0.0" width="206.5" height="108"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-LD-dH2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="108"/>
                                                         <color key="backgroundColor" red="0.1137254902" green="0.60784313729999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                         <state key="normal" title=".">
@@ -210,7 +210,7 @@
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGk-T1-huW">
-                                                        <rect key="frame" x="104.5" y="0.0" width="102" height="48"/>
+                                                        <rect key="frame" x="104.5" y="0.0" width="102" height="108"/>
                                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                                         <state key="normal" title="=">
@@ -220,6 +220,10 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iNf-gy-AzK" firstAttribute="bottom" secondItem="fU1-W1-Eu8" secondAttribute="bottom" id="VFA-mg-1Tl"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="iNf-gy-AzK" secondAttribute="bottom" id="jrY-Be-QpC"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -227,9 +231,12 @@
                                     <constraint firstItem="5fi-bF-oC0" firstAttribute="leading" secondItem="UTd-IP-td5" secondAttribute="leading" id="5Po-Kh-rvw"/>
                                     <constraint firstAttribute="trailing" secondItem="qSx-sB-pA1" secondAttribute="trailing" id="7S1-Ff-Mxs"/>
                                     <constraint firstItem="RKK-qA-UkI" firstAttribute="leading" secondItem="UTd-IP-td5" secondAttribute="leading" id="9ir-Z0-TMY"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="0pI-KG-v4r" secondAttribute="bottom" id="DZQ-Aa-24u"/>
+                                    <constraint firstAttribute="bottom" secondItem="0pI-KG-v4r" secondAttribute="bottom" id="M9D-Vd-yak"/>
                                     <constraint firstAttribute="trailing" secondItem="RKK-qA-UkI" secondAttribute="trailing" id="kcV-V7-aAf"/>
                                     <constraint firstItem="0pI-KG-v4r" firstAttribute="leading" secondItem="UTd-IP-td5" secondAttribute="leading" id="p2O-R6-Vu0"/>
                                     <constraint firstItem="fVK-Sf-mxS" firstAttribute="trailing" secondItem="UTd-IP-td5" secondAttribute="trailingMargin" id="smw-2I-xtx"/>
+                                    <constraint firstAttribute="bottom" secondItem="0pI-KG-v4r" secondAttribute="bottom" id="vbP-aE-fNs"/>
                                     <constraint firstAttribute="trailing" secondItem="0pI-KG-v4r" secondAttribute="trailing" id="yrZ-pw-FDs"/>
                                     <constraint firstAttribute="trailing" secondItem="Krx-rP-wFz" secondAttribute="trailing" id="zUa-5g-bZ4"/>
                                 </constraints>
